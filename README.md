@@ -54,3 +54,15 @@ Due to my time constraints, I was able to do only manual test for the website an
 + Currently we are sending email synchronously. We can try to send mails asynchronously to increase scalability of the system.
 + On server side, usage and reliability loggings should be done for later data analytic and service health monitoring. Based on loggings, we can find out how to improve our service (such as which email sender is more reliable or detect and blacklist spammers, etc.)
 + Add more features to the project such as support sending attachments or scheduling sending emails, etc.
+
+### Links
+#### Other codes that I'm proud of
+Below is the sample project I did for my Master thesis research (from 2008 - 2011):
++ Full description: http://www.cse.wustl.edu/~nguyent/atlasbuilder.htm
++ Source code: https://code.google.com/p/meshedit/source/browse/
+
+The code is very old but it is a much bigger example of my work over longer period of time.
+
+#### Resume
+https://www.dropbox.com/s/z6202sxjp3l1xxx/Trung%20D%20Nguyen%20resume.pdf?dl=0
+
