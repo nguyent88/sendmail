@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<body id="main_body">
+    <div id="form_container">
+        <form method="post" action="/">
+            <div>
+                <br />
+                <p>This is for testing purpose only. Please do not use for spamming!</p>
+                <br />
+            </div>
+            <ul style="list-style-type:none">
+                <li>
+                    <label>From </label>
+                    <div>
+                        <input name="from_email" type="text" value="" />
+                    </div><p><small>Required.</small></p>
+                </li>
+                <li>
+                    <label>To </label>
+                    <div>
+                        <input name="to_email" type="text" class="input large" value="" />
+                    </div><p><small>Required. Multiple addresses are separated by comma.</small></p>
+                </li>
+                <li>
+                    <label>CC </label>
+                    <div>
+                        <input name="cc_email" type="text" class="input large" value="" />
+                    </div><p><small>Optional. Multiple addresses are separated by comma.</small></p>
+                </li>
+                <li>
+                    <label>BCC </label>
+                    <div>
+                        <input name="bcc_email" type="text" class="input large" value="" />
+                    </div><p><small>Optional. Multiple addresses are separated by comma.</small></p>
+                </li>
+                <li>
+                    <label>Subject </label>
+                    <div>
+                        <input name="subject" class="input large" type="text" value="" />
+                    </div><p><small>Required. Cannot be more than 1000 characters.</small></p>
+                </li>
+                <li>
+                    <label>Content </label>
+                    <div>
+                        <textarea name="content" class="textarea large"></textarea>
+                    </div><p><small>Required. Cannot be more than 10000 characters.</small></p>
+                </li>
+                <li>
+                    {% if message %}
+                    <label>{{ message }}</label>
+                    {% endif %}
+                </li>
+                <li class="buttons">
+                    <input class="button_text" type="submit" name="submit" value="Send Email" />
+                </li>
+            </ul>
+        </form>
+
+    </div>
+</body>
+
+{% endblock %}

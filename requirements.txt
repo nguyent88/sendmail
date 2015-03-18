@@ -1,0 +1,4 @@
+Flask<1
+requests==2.5.1
+smtpapi==0.1.3
+mandrill==1.0.57
